@@ -1,17 +1,23 @@
 {
   "name": "login-app",
   "version": "1.0.0",
-  "description": "Simple login functionality with authentication",
-  "main": "index.js",
+  "description": "Simple login functionality with authentication and MongoDB",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "test": "node test.js",
     "dev": "node server.js"
   },
-  "keywords": ["login", "authentication", "session"],
+  "keywords": ["login", "authentication", "session", "mongodb"],
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.3"
   }
 }
